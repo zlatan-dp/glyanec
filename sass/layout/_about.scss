@@ -1,0 +1,69 @@
+.about {
+  .container {
+    display: flex;
+    gap: 30px;
+
+    // background-color: #fbfbfb;
+    background-image: url('../img/about-bg.png');
+    background-repeat: no-repeat;
+    @include desk {
+      padding-top: 30px;
+    }
+  }
+}
+
+.about-imag-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include desk {
+    padding-left: 100px;
+  }
+}
+
+.about-imag-item {
+  width: 135px;
+
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  @include desk {
+    width: 270px;
+  }
+}
+
+.about-imag-item.animate__fadeInUp {
+  opacity: 1;
+}
+.item-mob {
+  @include tab {
+    display: none;
+  }
+}
+
+.item-tab {
+  display: none;
+  @include tab {
+    display: block;
+  }
+}
+
+.about-imag-position {
+  position: relative;
+  top: 30px;
+  width: 100%;
+}
+.about-info-wrap {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.about-info-text {
+  font-family: 'TT Hoves Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.56;
+}

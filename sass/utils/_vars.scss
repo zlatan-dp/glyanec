@@ -1,0 +1,31 @@
+:root {
+  --text-color: #333333;
+  --main-fs: 20px;
+
+  // --trans-dur: 300ms;
+  // --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/Proxima Nova Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Black';
+  src: url('../fonts/Proxima Nova Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/Proxima Nova Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  color: var(--text-color);
+  font-size: var(--main-fs);
+}

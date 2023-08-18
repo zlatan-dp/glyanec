@@ -1,0 +1,56 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 50px;
+  border: none;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--main-gray);
+  cursor: pointer;
+  transition: background-color var(--trans-dur) var(--trans-timing-function);
+}
+
+.btn-white {
+  background-color: var(--white-color);
+
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/right-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-gray-4);
+  }
+}
+
+.btn-gray {
+  background-color: var(--main-gray);
+  color: var(--white-color);
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/right-arrow-light.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+  }
+  &:hover,
+  &:focus {
+    background-color: #555555;
+  }
+}
+
+.btn-absolute {
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+}

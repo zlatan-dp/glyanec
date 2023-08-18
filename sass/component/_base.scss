@@ -1,0 +1,31 @@
+.container {
+  max-width: 100%;
+  min-width: 370px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  // border: 2px solid red;
+
+  @include mob {
+    max-width: 480px;
+  }
+
+  @include tab {
+    max-width: 768px;
+  }
+
+  @include desk {
+    max-width: 1200px;
+  }
+
+  @include wide {
+    max-width: 1900px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
