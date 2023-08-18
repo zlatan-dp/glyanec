@@ -1,9 +1,13 @@
 :root {
   --text-color: #333333;
+  --accent-color: #ffe30b;
   --main-fs: 20px;
+  --second-fs: 16px;
 
-  // --trans-dur: 300ms;
-  // --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-lh: 1.25;
+
+  --trans-dur: 300ms;
+  --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @font-face {

@@ -1,11 +1,32 @@
 .header {
   min-width: 370px;
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+
+    @include desk {
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+}
+
+.header-logo {
+  display: inline-block;
+  width: 160px;
+  margin-right: auto;
+
+  @include desk {
+    width: 190px;
+  }
+
+  @include wide {
+    width: 266px;
   }
 }
 
@@ -15,33 +36,78 @@
   @include tab {
     display: block;
   }
-
-  @include desk {
-    margin-right: 223px;
-  }
 }
 
 .menu-list {
   display: flex;
-  gap: 60px;
+
+  &-item {
+    padding: 0 10px;
+    &:not(:last-child) {
+      border-right: 1px solid rgba(51, 51, 51, 0.1);
+    }
+    @include desk {
+      padding: 0 15px;
+    }
+
+    @include wide {
+      padding: 0 50px;
+    }
+  }
 
   &-link {
-    color: var(--main-gray);
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 4px 0;
+    color: var(--text-color);
+    font-size: var(--main-fs);
+    line-height: var(--main-lh);
     transition: color var(--trans-dur) var(--trans-timing-function);
 
     &:hover,
     &:focus {
-      color: var(--accent-gray-4);
+      color: var(--accent-color);
     }
   }
 }
 
-.current {
-  border-top: 1px solid var(--main-gray);
-  border-bottom: 1px solid var(--main-gray);
+.header-contacts-soc {
+  display: flex;
+  gap: 12px;
+}
+
+.soc-item {
+  width: 35px;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.phones-working {
+  font-size: var(--second-fs);
+  line-height: var(--main-lh);
+  margin-bottom: 2px;
+}
+
+.phones-phone {
+  display: flex;
+  align-items: center;
+  font-family: 'Proxima Nova Bold';
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: var(--main-lh);
+
+  &::after {
+    content: '';
+
+    width: 24px;
+    height: 24px;
+    background-image: url('../../icons/chevron_down.svg');
+  }
+
+  @include wide {
+    font-size: 26px;
+  }
 }
 
 .mob-menu {
@@ -49,7 +115,7 @@
   right: 0;
   top: 0;
   z-index: 2;
-  background-color: var(--accent-gray-6);
+  background-color: rgb(245, 240, 208);
   width: 270px;
   padding: 30px;
 }
@@ -57,6 +123,7 @@
 .mob-menu-btn {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @include tab {
     display: none;
@@ -79,10 +146,10 @@
   align-items: center;
 
   &:hover .mob-menu-icon {
-    fill: var(--accent-gray-4);
+    fill: var(--accent-color);
   }
   &:focus .mob-menu-icon {
-    fill: var(--accent-gray-4);
+    fill: var(--accent-color);
   }
 }
 

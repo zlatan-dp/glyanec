@@ -13,5 +13,70 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Глянець</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="header-logo">
+          <img src="img/header_logo.png" alt="header logo" />
+        </a>
+        <button type="button" class="mob-menu-btn">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="menu-list list">
+            <li class="menu-list-item"><a href="" class="menu-list-link link">Чому ми?</a></li>
+            <li class="menu-list-item"><a href="" class="menu-list-link link">Партнери</a></li>
+            <li class="menu-list-item"><a href="" class="menu-list-link link">Благодійність</a></li>
+            <li class="menu-list-item"><a href="" class="menu-list-link link">Про нас</a></li>
+            <li class="menu-list-item"><a href="" class="menu-list-link link">Drupal</a></li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <ul class="header-contacts-soc list">
+            <li class="soc-item">
+              <a href="" class="soc-link">
+                <img src="./icons/fb.svg" alt="" />
+              </a>
+            </li>
+            <li class="soc-item">
+              <a href="" class="soc-link">
+                <img src="./icons/insta.svg" alt="" />
+              </a>
+            </li>
+            <li class="soc-item">
+              <a href="" class="soc-link">
+                <img src="./icons/viber.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+          <div class="header-contacts-phones">
+            <p class="phones-working">Пн-Пт з 10 до 18</p>
+            <a href="" class="phones-phone link">0 (800) 759-759</a>
+          </div>
+        </div>
+
+        <div class="mob-menu is-hidden">
+          <button type="button" class="mob-menu-close">
+            <svg class="mob-menu-icon" width="40" height="40">
+              <use href="./icons/icons.svg#icon-mob-close"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-list list">
+              <li class="mob-list-item"><a href="" class="menu-list-link link">Чому ми?</a></li>
+              <li class="mob-list-item"><a href="" class="menu-list-link link">Партнери</a></li>
+              <li class="mob-list-item">
+                <a href="" class="menu-list-link link">Благодійність</a>
+              </li>
+              <li class="mob-list-item"><a href="" class="menu-list-link link">Про нас</a></li>
+              <li class="mob-list-item"><a href="" class="menu-list-link link">Drupal</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
