@@ -28,6 +28,12 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'Proxima Nova Extra Bold';
+  src: url('../fonts/Proxima Nova Extra Bold.otf') format('opentype');
+  font-weight: 800;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   color: var(--text-color);

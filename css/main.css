@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p,
 h1,
 h2,
@@ -52,6 +53,11 @@ img {
   font-family: "Proxima Nova Bold";
   src: url("../fonts/Proxima Nova Bold.ttf") format("truetype");
   font-weight: 700;
+}
+@font-face {
+  font-family: "Proxima Nova Extra Bold";
+  src: url("../fonts/Proxima Nova Extra Bold.otf") format("opentype");
+  font-weight: 800;
 }
 body {
   font-family: "Proxima Nova Regular", sans-serif;
@@ -113,6 +119,19 @@ body {
   line-height: var(--main-lh);
   background-image: linear-gradient(to right, #ffdf00, #ffb800);
   cursor: pointer;
+}
+
+.title {
+  font-family: "Proxima Nova Extra Bold";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: var(--main-lh);
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 44px;
+  }
 }
 
 .header {
@@ -285,7 +304,8 @@ body {
 
 .hero {
   padding-top: 204px;
-  height: 960px;
+  padding-bottom: 47px;
+  background-color: #fffefc;
   background-image: url("../../img/bg-img.png"), url("../../img/bg-shape.png"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg");
   background-repeat: no-repeat;
   background-size: 257px, 409px, 186px, 88px, 63px, 21px;
@@ -410,4 +430,51 @@ body {
   background-image: url("../../icons/Arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.test {
+  background-image: url("../../img/bg-test.png");
+  background-repeat: no-repeat;
+  background-position: top 200px left 0;
+}
+
+.test-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.content-img-wrap {
+  flex: 1 0 350px;
+}
+
+.content-info {
+  flex: 1 0 350px;
+  margin: auto 0;
+  height: 250px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Ширина полоси прокрутки */
+  scrollbar-color: #ffd00e #f9f9f9; /* Колір кнопки та фонової області */
+}
+@media screen and (min-width: 1900px) {
+  .content-info {
+    height: 400px;
+  }
+}
+
+.content-info::-webkit-scrollbar {
+  width: 5px; /* Ширина полоси прокрутки для WebKit браузерів */
+}
+
+.content-info::-webkit-scrollbar-thumb {
+  background-color: #ffd00e; /* Колір кнопки прокрутки для WebKit браузерів */
+  border-radius: 5px; /* Округленість кнопки прокрутки для WebKit браузерів */
+}
+
+.content-info::-webkit-scrollbar-track {
+  background-color: #f9f9f9; /* Колір фонової області для WebKit браузерів */
+}
+
+.content-info-text:not(:last-child) {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

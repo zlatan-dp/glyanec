@@ -1,0 +1,46 @@
+.test {
+  background-image: url('../../img/bg-test.png');
+  background-repeat: no-repeat;
+  background-position: top 200px left 0;
+}
+
+.test-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.content-img-wrap {
+  flex: 1 0 350px;
+}
+
+.content-info {
+  flex: 1 0 350px;
+  margin: auto 0;
+  height: 250px;
+  overflow-y: scroll;
+
+  scrollbar-width: thin; /* Ширина полоси прокрутки */
+  scrollbar-color: #ffd00e #f9f9f9; /* Колір кнопки та фонової області */
+
+  @include wide {
+    height: 400px;
+  }
+}
+
+.content-info::-webkit-scrollbar {
+  width: 5px; /* Ширина полоси прокрутки для WebKit браузерів */
+}
+
+.content-info::-webkit-scrollbar-thumb {
+  background-color: #ffd00e; /* Колір кнопки прокрутки для WebKit браузерів */
+  border-radius: 5px; /* Округленість кнопки прокрутки для WebKit браузерів */
+}
+
+.content-info::-webkit-scrollbar-track {
+  background-color: #f9f9f9; /* Колір фонової області для WebKit браузерів */
+}
+
+.content-info-text:not(:last-child) {
+  margin-bottom: 10px;
+}
