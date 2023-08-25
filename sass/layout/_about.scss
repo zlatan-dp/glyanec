@@ -1,69 +1,127 @@
-.about {
-  .container {
-    display: flex;
-    gap: 30px;
-
-    // background-color: #fbfbfb;
-    background-image: url('../img/about-bg.png');
-    background-repeat: no-repeat;
-    @include desk {
-      padding-top: 30px;
-    }
-  }
-}
-
-.about-imag-list {
+.about-us-list {
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 
   @include desk {
-    padding-left: 100px;
+    gap: 10px;
+    background-image: url('../../img/about-us-bg-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @include wide {
+    gap: 40px;
+    background-size: 672px;
   }
 }
 
-.about-imag-item {
-  width: 135px;
-
-  opacity: 0;
-  transition: opacity 1s ease;
+.about-us-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 
   @include desk {
-    width: 270px;
+    width: 405px;
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 380px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(9) {
+      margin-right: 217px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      margin-right: 330px;
+    }
+
+    &:nth-child(5) {
+      margin-right: 380px;
+    }
+  }
+
+  @include wide {
+    width: 605px;
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 580px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(9) {
+      margin-right: 217px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      margin-right: 483px;
+    }
+
+    &:nth-child(5) {
+      margin-right: 549px;
+    }
   }
 }
 
-.about-imag-item.animate__fadeInUp {
-  opacity: 1;
+.about-us-item-text:nth-child(odd) {
+  text-align: right;
 }
-.item-mob {
-  @include tab {
-    display: none;
+
+.about-us-title {
+  font-family: 'Proxima Nova Bold';
+  font-weight: 700;
+  font-size: var(--main-fs);
+  line-height: var(--main-lh);
+  margin-bottom: 10px;
+}
+
+.about-us-text {
+  font-size: var(--second-fs);
+  @include desk {
+    font-size: 12px;
+  }
+
+  @include wide {
+    font-size: var(--second-fs);
   }
 }
 
-.item-tab {
-  display: none;
-  @include tab {
-    display: block;
-  }
-}
-
-.about-imag-position {
-  position: relative;
-  top: 30px;
-  width: 100%;
-}
-.about-info-wrap {
-  width: 420px;
+.about-us-item-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: var(--gradient);
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  @include wide {
+    width: 80px;
+    height: 80px;
+  }
 }
-.about-info-text {
-  font-family: 'TT Hoves Light';
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.56;
+
+.icon {
+  stroke: currentColor;
+  fill: none;
+}
+
+.about-us-gallery {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1 0 250px;
 }
