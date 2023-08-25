@@ -1,0 +1,56 @@
+.best {
+  background-image: var(--gradient);
+  .container {
+    @include tab {
+      background-image: url('../../img/best-img.png');
+      background-repeat: no-repeat;
+      background-position: right -0px top 230px;
+      background-size: 200px;
+    }
+
+    @include desk {
+      background-position: right 50px top 50px;
+      background-size: 500px;
+    }
+
+    @include wide {
+      background-position: right 200px top 0px;
+      background-size: 600px;
+    }
+  }
+}
+
+.best-info {
+  width: 346px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include mob {
+    width: 446px;
+  }
+
+  @include tab {
+    width: 676px;
+  }
+
+  @include wide {
+    width: 876px;
+  }
+}
+
+.best-info-title {
+  font-family: 'Proxima Nova Bold';
+  font-size: 26px;
+}
+
+.best-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 29px;
+  flex-wrap: wrap;
+
+  @include mob {
+    gap: 50px;
+  }
+}

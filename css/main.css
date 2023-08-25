@@ -32,6 +32,7 @@ img {
 :root {
   --text-color: #333333;
   --accent-color: #ffe30b;
+  --gradient: linear-gradient(to right, #ffdf00, #ffb800);
   --main-fs: 20px;
   --second-fs: 16px;
   --main-lh: 1.25;
@@ -117,7 +118,7 @@ body {
   color: var(--text-color);
   font-size: 20px;
   line-height: var(--main-lh);
-  background-image: linear-gradient(to right, #ffdf00, #ffb800);
+  background-image: var(--gradient);
   cursor: pointer;
 }
 
@@ -475,6 +476,77 @@ body {
   background-color: #f9f9f9; /* Колір фонової області для WebKit браузерів */
 }
 
+.content-info-text {
+  line-height: 1.5;
+}
+
 .content-info-text:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.bold {
+  font-family: "Proxima Nova Bold";
+}
+
+.best {
+  background-image: var(--gradient);
+}
+@media screen and (min-width: 768px) {
+  .best .container {
+    background-image: url("../../img/best-img.png");
+    background-repeat: no-repeat;
+    background-position: right 0px top 230px;
+    background-size: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .best .container {
+    background-position: right 50px top 50px;
+    background-size: 500px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .best .container {
+    background-position: right 200px top 0px;
+    background-size: 600px;
+  }
+}
+
+.best-info {
+  width: 346px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 480px) {
+  .best-info {
+    width: 446px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .best-info {
+    width: 676px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .best-info {
+    width: 876px;
+  }
+}
+
+.best-info-title {
+  font-family: "Proxima Nova Bold";
+  font-size: 26px;
+}
+
+.best-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 29px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .best-list {
+    gap: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
