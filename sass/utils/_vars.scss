@@ -32,8 +32,13 @@
 
 @font-face {
   font-family: 'Proxima Nova Extra Bold';
-  src: url('../fonts/Proxima Nova Extra Bold.otf') format('opentype');
+  src: url('../fonts/Proxima Nova Extra Bold.ttf') format('truetype');
   font-weight: 800;
+}
+@font-face {
+  font-family: 'Proxima Nova-Semibold';
+  src: url('../fonts/Proxima Nova-Semibold.ttf') format('truetype');
+  font-weight: 600;
 }
 
 body {

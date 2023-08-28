@@ -57,8 +57,13 @@ img {
 }
 @font-face {
   font-family: "Proxima Nova Extra Bold";
-  src: url("../fonts/Proxima Nova Extra Bold.otf") format("opentype");
+  src: url("../fonts/Proxima Nova Extra Bold.ttf") format("truetype");
   font-weight: 800;
+}
+@font-face {
+  font-family: "Proxima Nova-Semibold";
+  src: url("../fonts/Proxima Nova-Semibold.ttf") format("truetype");
+  font-weight: 600;
 }
 body {
   font-family: "Proxima Nova Regular", sans-serif;
@@ -551,6 +556,13 @@ body {
   }
 }
 
+.about-us {
+  background-image: url("../../img/bg-test.png");
+  background-repeat: no-repeat;
+  background-size: 613px;
+  background-position: right 0px bottom 0px;
+}
+
 .about-us-list {
   margin-bottom: 50px;
   display: flex;
@@ -672,4 +684,45 @@ body {
 
 .gallery-item {
   flex: 1 0 250px;
+}
+
+.drupal-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.drupal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 30px 30px 30px;
+  border: 2px solid rgba(69, 77, 82, 0.0509803922);
+  border-radius: 10px;
+}
+.drupal-item:nth-child(even) {
+  background-image: linear-gradient(to right, rgba(255, 221, 0, 0.15), rgba(255, 183, 0, 0.15));
+}
+.drupal-item:nth-child(odd) {
+  background-image: url("../../img/bg-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 266px;
+  background-position: top 50% right -170px;
+}
+@media screen and (min-width: 768px) {
+  .drupal-item {
+    flex: 1 0 200px;
+  }
+}
+
+.drupal-item-title {
+  font-family: "Proxima Nova-Semibold";
+  font-size: var(--main-fs);
+  line-height: var(--main-lh);
+  font-weight: 600;
+}
+
+.drupal-item-text {
+  font-size: var(--second-fs);
+  line-height: var(--main-lh);
 }/*# sourceMappingURL=main.css.map */

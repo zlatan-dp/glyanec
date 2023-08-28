@@ -1,0 +1,40 @@
+.drupal-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.drupal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 30px 30px 30px;
+  border: 2px solid #454d520d;
+  border-radius: 10px;
+  &:nth-child(even) {
+    background-image: linear-gradient(to right, rgba(255, 221, 0, 0.15), rgba(255, 183, 0, 0.15));
+  }
+
+  &:nth-child(odd) {
+    background-image: url('../../img/bg-circle.svg');
+    background-repeat: no-repeat;
+    background-size: 266px;
+    background-position: top 50% right -170px;
+  }
+
+  @include tab {
+    flex: 1 0 200px;
+  }
+}
+
+.drupal-item-title {
+  font-family: 'Proxima Nova-Semibold';
+  font-size: var(--main-fs);
+  line-height: var(--main-lh);
+  font-weight: 600;
+}
+
+.drupal-item-text {
+  font-size: var(--second-fs);
+  line-height: var(--main-lh);
+}
