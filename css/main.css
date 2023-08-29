@@ -69,6 +69,7 @@ body {
   font-family: "Proxima Nova Regular", sans-serif;
   color: var(--text-color);
   font-size: var(--main-fs);
+  background-color: #fffefb;
 }
 
 .is-hidden {
@@ -316,27 +317,27 @@ body {
   padding-top: 204px;
   padding-bottom: 47px;
   background-color: #fffefc;
-  background-image: url("../../img/bg-img.png"), url("../../img/bg-shape.png"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg");
+  background-image: url("../../img/bg-hero.png"), url("../../img/bg-img.png"), url("../../img/bg-shape.png"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg");
   background-repeat: no-repeat;
-  background-size: 257px, 409px, 186px, 88px, 63px, 21px;
-  background-position: top 354px right -50px, top 354px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 20%, top 600px right 400px;
+  background-size: auto, 257px, 409px, 186px, 88px, 63px, 21px;
+  background-position: center, top 354px right -50px, top 354px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 20%, top 600px right 400px;
 }
 @media screen and (min-width: 480px) {
   .hero {
-    background-size: 307px, 459px, 186px, 88px, 63px, 21px;
-    background-position: top 354px right 0px, top 354px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 20%, top 600px right 400px;
+    background-size: auto, 307px, 459px, 186px, 88px, 63px, 21px;
+    background-position: center, top 354px right 0px, top 354px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 20%, top 600px right 400px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-size: 407px, 559px, 236px, 118px, 63px, 21px;
-    background-position: top 204px right 0px, top 204px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 300px, top 600px right 400px;
+    background-size: auto, 407px, 559px, 236px, 118px, 63px, 21px;
+    background-position: center, top 204px right 0px, top 204px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 300px, top 600px right 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-size: 667px, 809px, 436px, 218px, 93px, 31px;
-    background-position: top 244px right 100px, top 204px right -50px, top 140px left -50px, top 534px left 40%, top 150px right 600px, top 600px right 800px;
+    background-size: cover, 667px, 809px, 436px, 218px, 93px, 31px;
+    background-position: center, top 244px right 100px, top 204px right -50px, top 140px left -50px, top 534px left 40%, top 150px right 600px, top 600px right 800px;
   }
 }
 
@@ -748,4 +749,101 @@ body {
 .partners-link:hover,
 .partners-link:focus {
   background-image: linear-gradient(to right, rgba(255, 221, 0, 0.15), rgba(255, 183, 0, 0.15));
+}
+
+.charity {
+  background-image: url("../../img/bg-test.png");
+  background-repeat: no-repeat;
+  background-size: 613px;
+  background-position: right 0px top 200px;
+}
+.charity .container {
+  position: relative;
+}
+
+.charity-img-wrap-1 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  width: 518px;
+  top: 0;
+  right: 75px;
+  z-index: 0;
+}
+
+.charity-img-wrap-2 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  width: 413px;
+  top: 75px;
+  right: 539px;
+  z-index: 1;
+}
+
+.charity-img-wrap-3 {
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  width: 375px;
+  top: 187px;
+  right: 178px;
+  z-index: 2;
+}
+
+.charity-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .charity-item {
+    flex: 1 0 500px;
+  }
+}
+
+.charity-title {
+  margin-bottom: 76px;
+}
+
+.charity-text-wrap {
+  max-width: 749px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 164px;
+}
+
+.charity-bold-text {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.charity-text {
+  line-height: 1.5;
+}
+
+.charity-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  background-color: #fff;
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.1);
+}
+.charity-link:hover, .charity-link:focus {
+  background-image: var(--gradient);
+}
+
+.charity-item-text {
+  text-align: center;
+  line-height: 1.5;
+  font-size: var(--second-fs);
 }/*# sourceMappingURL=main.css.map */

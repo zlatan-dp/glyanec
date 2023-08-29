@@ -2,30 +2,30 @@
   padding-top: 204px;
   padding-bottom: 47px;
   background-color: #fffefc;
-  background-image: url('../../img/bg-img.png'), url('../../img/bg-shape.png'),
-    url('../../img/bg-circle.svg'), url('../../img/bg-circle.svg'), url('../../img/bg-circle.svg'),
-    url('../../img/bg-circle.svg');
+  background-image: url('../../img/bg-hero.png'), url('../../img/bg-img.png'),
+    url('../../img/bg-shape.png'), url('../../img/bg-circle.svg'), url('../../img/bg-circle.svg'),
+    url('../../img/bg-circle.svg'), url('../../img/bg-circle.svg');
   background-repeat: no-repeat;
 
-  background-size: 257px, 409px, 186px, 88px, 63px, 21px;
-  background-position: top 354px right -50px, top 354px right -150px, top 140px left -50px,
+  background-size: auto, 257px, 409px, 186px, 88px, 63px, 21px;
+  background-position: center, top 354px right -50px, top 354px right -150px, top 140px left -50px,
     top 534px left 40%, top 150px right 20%, top 600px right 400px;
 
   @include mob {
-    background-size: 307px, 459px, 186px, 88px, 63px, 21px;
-    background-position: top 354px right 0px, top 354px right -150px, top 140px left -50px,
+    background-size: auto, 307px, 459px, 186px, 88px, 63px, 21px;
+    background-position: center, top 354px right 0px, top 354px right -150px, top 140px left -50px,
       top 534px left 40%, top 150px right 20%, top 600px right 400px;
   }
 
   @include tab {
-    background-size: 407px, 559px, 236px, 118px, 63px, 21px;
-    background-position: top 204px right 0px, top 204px right -150px, top 140px left -50px,
+    background-size: auto, 407px, 559px, 236px, 118px, 63px, 21px;
+    background-position: center, top 204px right 0px, top 204px right -150px, top 140px left -50px,
       top 534px left 40%, top 150px right 300px, top 600px right 400px;
   }
 
   @include desk {
-    background-size: 667px, 809px, 436px, 218px, 93px, 31px;
-    background-position: top 244px right 100px, top 204px right -50px, top 140px left -50px,
+    background-size: cover, 667px, 809px, 436px, 218px, 93px, 31px;
+    background-position: center, top 244px right 100px, top 204px right -50px, top 140px left -50px,
       top 534px left 40%, top 150px right 600px, top 600px right 800px;
   }
 }
