@@ -11,29 +11,133 @@
 .charity-img-wrap-1 {
   border-radius: 10px;
   overflow: hidden;
-  position: absolute;
-  width: 518px;
-  top: 0;
-  right: 75px;
-  z-index: 0;
+  margin-bottom: 30px;
+
+  @include mob {
+    margin-bottom: 0px;
+
+    position: absolute;
+    width: 218px;
+    right: 65px;
+    top: 480px;
+    z-index: 0;
+  }
+
+  @include tab {
+    width: 218px;
+    right: 15px;
+    top: 0px;
+  }
+
+  @include desk {
+    width: 318px;
+    right: 15px;
+  }
+
+  @include wide {
+    width: 518px;
+    right: 75px;
+  }
 }
 .charity-img-wrap-2 {
   border-radius: 10px;
   overflow: hidden;
-  position: absolute;
-  width: 413px;
-  top: 75px;
-  right: 539px;
-  z-index: 1;
+  margin-bottom: 30px;
+
+  @include mob {
+    margin-bottom: 0px;
+
+    position: absolute;
+    width: 203px;
+    right: 240px;
+    top: 525px;
+    z-index: 1;
+  }
+
+  @include tab {
+    right: 99px;
+    top: 105px;
+  }
+
+  @include desk {
+    width: 263px;
+    right: 239px;
+    top: 75px;
+  }
+
+  @include wide {
+    width: 413px;
+    right: 539px;
+  }
 }
 .charity-img-wrap-3 {
   border-radius: 10px;
   overflow: hidden;
-  position: absolute;
-  width: 375px;
-  top: 187px;
-  right: 178px;
-  z-index: 2;
+  margin-bottom: 30px;
+
+  @include mob {
+    margin-bottom: 00px;
+
+    position: absolute;
+    width: 205px;
+    right: 38px;
+    top: 577px;
+    z-index: 2;
+  }
+
+  @include tab {
+    right: 38px;
+    top: 257px;
+  }
+
+  @include desk {
+    width: 255px;
+    right: 78px;
+    top: 187px;
+  }
+
+  @include wide {
+    width: 375px;
+    right: 178px;
+  }
+}
+
+.charity-title {
+  margin-bottom: 76px;
+}
+.charity-text-wrap {
+  max-width: 449px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  @include mob {
+    margin-bottom: 300px;
+  }
+
+  @include tab {
+    margin-bottom: 60px;
+  }
+
+  @include desk {
+    max-width: 649px;
+  }
+
+  @include wide {
+    max-width: 749px;
+    margin-bottom: 164px;
+  }
+}
+
+.charity-bold-text {
+  font-family: 'Proxima Nova Bold';
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.charity-text {
+  line-height: 1.5;
 }
 
 .charity-list {
@@ -45,27 +149,6 @@
   @include tab {
     flex: 1 0 500px;
   }
-}
-
-.charity-title {
-  margin-bottom: 76px;
-}
-.charity-text-wrap {
-  max-width: 749px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 164px;
-}
-
-.charity-bold-text {
-  font-family: 'Proxima Nova Bold';
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.charity-text {
-  line-height: 1.5;
 }
 
 .charity-link {
