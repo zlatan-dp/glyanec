@@ -317,7 +317,7 @@ body {
   padding-top: 204px;
   padding-bottom: 47px;
   background-color: #fffefc;
-  background-image: url("../../img/bg-hero.png"), url("../../img/bg-img.png"), url("../../img/bg-shape.png"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg"), url("../../img/bg-circle.svg");
+  background-image: url("../img/bg-hero.png"), url("../img/bg-img.png"), url("../img/bg-shape.png"), url("../img/bg-circle.svg"), url("../img/bg-circle.svg"), url("../img/bg-circle.svg"), url("../img/bg-circle.svg");
   background-repeat: no-repeat;
   background-size: auto, 257px, 409px, 186px, 88px, 63px, 21px;
   background-position: center, top 354px right -50px, top 354px right -150px, top 140px left -50px, top 534px left 40%, top 150px right 20%, top 600px right 400px;
@@ -942,4 +942,38 @@ body {
   text-align: center;
   line-height: 1.5;
   font-size: var(--second-fs);
+}
+
+.footer {
+  padding: 43px 0 55px 0;
+  background-image: var(--gradient);
+  background-size: 30%;
+  background-repeat: no-repeat;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 160px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .footer-logo {
+    width: 266px;
+  }
+}
+
+.footer-text {
+  font-size: var(--second-fs);
+  line-height: var(--main-lh);
+  margin-bottom: 69px;
+}
+
+.footer-copyright {
+  font-size: var(--second-fs);
+  line-height: var(--main-lh);
 }/*# sourceMappingURL=main.css.map */
