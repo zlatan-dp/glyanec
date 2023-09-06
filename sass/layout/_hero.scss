@@ -90,7 +90,7 @@
   width: 148px;
   height: 16px;
   margin: 0 auto;
-  background-image: url('../../img/pagination.png');
+  background-image: url('../img/pagination.png');
   background-repeat: no-repeat;
 
   @include mob {
@@ -119,7 +119,7 @@
     content: '';
     width: 18px;
     height: 28px;
-    background-image: url('../../icons/Arrow.svg');
+    background-image: url('../icons/Arrow.svg');
     background-size: contain;
     background-repeat: no-repeat;
   }

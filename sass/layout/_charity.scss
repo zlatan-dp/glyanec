@@ -1,13 +1,15 @@
 .charity {
-  background-image: url('../../img/bg-test.png');
+  background-image: url('../img/bg-test.png');
   background-repeat: no-repeat;
   background-size: 613px;
   background-position: right 0px top 200px;
 
   .container {
     position: relative;
+    padding-bottom: 50px;
   }
 }
+
 .charity-img-wrap-1 {
   border-radius: 10px;
   overflow: hidden;

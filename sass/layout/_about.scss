@@ -1,5 +1,5 @@
 .about-us {
-  background-image: url('../../img/bg-test.png');
+  background-image: url('../img/bg-test.png');
   background-repeat: no-repeat;
   background-size: 613px;
   background-position: right 0px bottom 0px;
@@ -13,7 +13,7 @@
 
   @include desk {
     gap: 10px;
-    background-image: url('../../img/about-us-bg-1.png');
+    background-image: url('../img/about-us-bg-1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 45%;
