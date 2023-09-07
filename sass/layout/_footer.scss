@@ -121,15 +121,25 @@
   color: #fff;
   line-height: var(--main-lh);
 
+  transition: color var(--trans-dur) var(--trans-timing-function);
+
   @include wide {
     font-size: 24px;
   }
+}
+
+.footer-contacts-text-small:hover,
+.footer-contacts-text-small:focus,
+.footer-contacts-text:hover,
+.footer-contacts-text:focus {
+  color: var(--accent-color);
 }
 
 .footer-contacts-text-small {
   font-size: var(--main-fs);
   line-height: var(--main-lh);
   color: #fff;
+  transition: color var(--trans-dur) var(--trans-timing-function);
 }
 
 .footer-contacts-adress {
@@ -142,14 +152,29 @@
 .footer-contacts-soc {
   margin-top: 20px;
   display: flex;
-  gap: 45px;
+  gap: 20px;
   align-items: center;
+  transform: translateX(-16px);
 }
 
 .soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color var(--trans-dur) var(--trans-timing-function);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: #ffb800;
+}
+
+.footer-icon {
+  fill: currentColor;
 }
 
 .decor {

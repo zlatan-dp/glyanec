@@ -72,6 +72,10 @@ body {
   background-color: #fffefb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -422,6 +426,8 @@ body {
 }
 
 .more-btn {
+  padding: 15px;
+  border-radius: 10px;
   cursor: pointer;
   display: inline-flex;
   flex-direction: column;
@@ -433,6 +439,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: var--main-lh;
+  transition: background-color var(--trans-dur) var(--trans-timing-function);
 }
 .more-btn::after {
   content: "";
@@ -441,6 +448,10 @@ body {
   background-image: url("../icons/Arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.more-btn:hover {
+  background-color: rgba(255, 183, 0, 0.19);
 }
 
 .test {
@@ -930,7 +941,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 24px 16px;
-  background-color: #fff;
   color: var(--text-color);
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.1);
@@ -1071,6 +1081,7 @@ body {
   font-size: var(--main-fs);
   color: #fff;
   line-height: var(--main-lh);
+  transition: color var(--trans-dur) var(--trans-timing-function);
 }
 @media screen and (min-width: 1920px) {
   .footer-contacts-text {
@@ -1078,10 +1089,18 @@ body {
   }
 }
 
+.footer-contacts-text-small:hover,
+.footer-contacts-text-small:focus,
+.footer-contacts-text:hover,
+.footer-contacts-text:focus {
+  color: var(--accent-color);
+}
+
 .footer-contacts-text-small {
   font-size: var(--main-fs);
   line-height: var(--main-lh);
   color: #fff;
+  transition: color var(--trans-dur) var(--trans-timing-function);
 }
 
 .footer-contacts-adress {
@@ -1094,14 +1113,29 @@ body {
 .footer-contacts-soc {
   margin-top: 20px;
   display: flex;
-  gap: 45px;
+  gap: 20px;
   align-items: center;
+  transform: translateX(-16px);
 }
 
 .soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color var(--trans-dur) var(--trans-timing-function);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: #ffb800;
+}
+
+.footer-icon {
+  fill: currentColor;
 }
 
 .decor {

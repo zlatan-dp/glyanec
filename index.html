@@ -26,11 +26,11 @@
         </button>
         <nav class="header-nav">
           <ul class="menu-list list">
-            <li class="menu-list-item"><a href="" class="menu-list-link link">Чому ми?</a></li>
-            <li class="menu-list-item"><a href="" class="menu-list-link link">Партнери</a></li>
-            <li class="menu-list-item"><a href="" class="menu-list-link link">Благодійність</a></li>
-            <li class="menu-list-item"><a href="" class="menu-list-link link">Про нас</a></li>
-            <li class="menu-list-item"><a href="" class="menu-list-link link">Drupal</a></li>
+            <li class="menu-list-item"><a href="#best" onclick="scrollToAnchor(event)" class="menu-list-link link">Чому ми?</a></li>
+            <li class="menu-list-item"><a href="#partners" onclick="scrollToAnchor(event)" class="menu-list-link link">Партнери</a></li>
+            <li class="menu-list-item"><a href="#charity" onclick="scrollToAnchor(event)" class="menu-list-link link">Благодійність</a></li>
+            <li class="menu-list-item"><a href="#about-us" onclick="scrollToAnchor(event)" class="menu-list-link link">Про нас</a></li>
+            <li class="menu-list-item"><a href="#drupal" onclick="scrollToAnchor(event)" class="menu-list-link link">Drupal</a></li>
           </ul>
         </nav>
         <div class="header-contacts">
@@ -150,7 +150,7 @@
         </div>
       </section>
 
-      <section class="best section">
+      <section class="best section" id="best">
         <div class="container">
           <h2 class="title">Найкраща компанія для роботи в IT</h2>
           <div class="best-info">
@@ -193,7 +193,7 @@
         </div>
       </section>
 
-      <section class="about-us section">
+      <section class="about-us section" id="about-us">
         <div class="container">
           <h2 class="title">У нас</h2>
           <ul class="about-us-list list">
@@ -368,7 +368,7 @@
         </div>
       </section>
 
-      <section class="drupal section">
+      <section class="drupal section" id="drupal">
         <div class="container">
           <h2 class="title">Наш вклад в Drupal</h2>
           <ul class="drupal-list list">
@@ -411,7 +411,7 @@
         </div>
       </section>
 
-      <section class="partners section">
+      <section class="partners section" id="partners">
         <div class="container">
           <h2 class="title">З нами працюють:</h2>
           <ul class="partners-list list">
@@ -488,7 +488,7 @@
         </div>
       </section>
 
-      <section class="charity section">
+      <section class="charity section" id="charity">
         <div class="container">
           <h2 class="title charity-title">Благодійність</h2>
           <div class="charity-text-wrap">
@@ -690,5 +690,7 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/scroll.js"></script>
+
   </body>
 </html>

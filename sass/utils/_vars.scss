@@ -47,3 +47,7 @@ body {
   font-size: var(--main-fs);
   background-color: #fffefb;
 }
+
+html {
+  scroll-behavior: smooth;
+}
