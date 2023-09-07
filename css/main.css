@@ -455,7 +455,7 @@ html {
 }
 
 .test {
-  background-image: url("../../img/bg-test.png");
+  background-image: url("../img/bg-test.png");
   background-repeat: no-repeat;
   background-position: top 200px left 0;
 }
@@ -510,7 +510,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .best .container {
-    background-image: url("../../img/best-img.png");
+    background-image: url("../img/best-img.png");
     background-repeat: no-repeat;
     background-position: right 0px top 230px;
     background-size: 200px;
